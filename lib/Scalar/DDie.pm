@@ -2,7 +2,7 @@ package Scalar::DDie;
 use strict;
 use warnings;
 use 5.008005;
-our $VERSION = '0.0.1';
+our $VERSION = '0.0.2';
 use parent qw/Exporter/;
 
 our @EXPORT = qw(ddie);
@@ -29,7 +29,7 @@ Scalar::DDie - Defined or die.
 
     use Scalar::DDie;
 
-    ddie($var);
+    say ddie($var);
 
 =head1 DESCRIPTION
 

@@ -3,8 +3,18 @@ use strict;
 use warnings;
 use 5.008005;
 our $VERSION = '0.0.1';
+use parent qw/Exporter/;
 
+our @EXPORT = qw(ddie);
+use Carp ();
 
+sub ddie($) {
+    if (defined($_[0])) {
+        return $_[0];
+    } else {
+        Carp::croak("The value is not defined."); 
+    }
+}
 
 1;
 __END__
@@ -13,23 +23,22 @@ __END__
 
 =head1 NAME
 
-Scalar::DDie - ...
+Scalar::DDie - Defined or die.
 
 =head1 SYNOPSIS
 
-  use Scalar::DDie;
+    use Scalar::DDie;
+
+    ddie($var);
 
 =head1 DESCRIPTION
 
-Scalar::DDie is
-
-B<THIS IS A DEVELOPMENT RELEASE. API MAY CHANGE WITHOUT NOTICE>.
+Scalar::DDie checks the scalar value. If the value is not defined then it throw exception.
+Just return value otherwise.
 
 =head1 AUTHOR
 
 Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF@ GMAIL COME<gt>
-
-=head1 SEE ALSO
 
 =head1 LICENSE
 

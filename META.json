@@ -1,0 +1,41 @@
+{
+   "abstract" : "Defined or die.",
+   "author" : [
+      "Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Minilla/0.0.44",
+   "license" : "perl_5",
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Scalar-DDie",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::More" : "0.98",
+            "Test::Requires" : 0
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build::Tiny" : 0
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "parent" : 0,
+            "perl" : "5.008005"
+         }
+      }
+   },
+   "release_status" : "unstable",
+   "resources" : {
+      "homepage" : "git://github.com/tokuhirom/Scalar-DDie/tree",
+      "repository" : {
+         "url" : "git://github.com/tokuhirom/Scalar-DDie.git"
+      }
+   },
+   "version" : "v0.0.2"
+}
